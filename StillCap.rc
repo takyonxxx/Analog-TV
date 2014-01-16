@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\StillCap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StillCap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About StillCap"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TurkayTv Version 1.0",IDC_STATIC,43,23,119,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STILLCAP_DIALOG DIALOGEX 0, 0, 310, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TurkayTV"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "<None>",IDC_CAPOBJ,126,14,179,9
+    CONTROL         "",IDC_PREVIEW,"Static",SS_BLACKRECT,1,30,308,200
+    LTEXT           "<No capture hardware>",IDC_STATUS,84,14,42,9
+    PUSHBUTTON      "Tv_Tuner",IDC_BUTTON1,6,12,37,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Crossbar",IDC_BUTTON2,45,12,36,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Fm_Radio",IDC_BUTTON3,6,254,42,12,NOT WS_TABSTOP
+    PUSHBUTTON      "<--",IDC_BUTTON4,54,240,29,11,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,94,254,38,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "Set_Freq",IDC_BUTTON5,155,240,40,12,NOT WS_TABSTOP
+    PUSHBUTTON      "TV_Tuner",IDC_BUTTON6,6,240,42,12,NOT WS_TABSTOP
+    PUSHBUTTON      "-->",IDC_BUTTON7,104,240,28,11,NOT WS_TABSTOP
+    PUSHBUTTON      "--",IDC_BUTTON8,85,240,17,11,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,197,240,44,13,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "-->",IDC_BUTTON10,285,255,21,12,NOT WS_TABSTOP
+    PUSHBUTTON      "<--",IDC_BUTTON11,261,255,21,12,NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC1,0,2,309,27
+    GROUPBOX        "",IDC_STATIC2,0,231,309,40
+    LTEXT           "Hz",IDC_HZ,242,244,17,8
+    PUSHBUTTON      "Auto_Scan",IDC_BUTTON9,261,240,45,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,197,255,44,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "Step",IDC_STEP,173,258,20,8
+    LTEXT           "Mhz",IDC_MHZ,133,258,17,8
+    LTEXT           "Hz",IDC_HZ2,242,259,17,8
+    EDITTEXT        IDC_EDIT4,79,254,7,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "Signal",IDC_SG,55,257,24,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 9,0,0,0
+ PRODUCTVERSION 9,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Comments", "DirectShow Sample"
+            VALUE "CompanyName", "Microsoft"
+            VALUE "FileDescription", "StillCap MFC Application"
+            VALUE "FileVersion", "9.00"
+            VALUE "InternalName", "StillCap"
+            VALUE "LegalCopyright", "Copyright (c) 2000-2002 Microsoft Corporation"
+            VALUE "OriginalFilename", "StillCap.EXE"
+            VALUE "ProductName", "DirectX 9 SDK"
+            VALUE "ProductVersion", "9.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_STILLCAP_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About StillCap..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\StillCap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
